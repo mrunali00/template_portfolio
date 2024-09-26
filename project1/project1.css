@@ -1,0 +1,933 @@
+:root {
+    --backgroundBlack: rgba(0, 0, 0, 0.925);
+    --white: white;
+    --textlight: lightgray;
+    --gray: gray;
+    --headweight500: 500;
+    --titleSize25: 30px;
+    --para: 17px;
+    --footer: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* //////      menu bar   /////////////////// */
+.menubar {
+    position: sticky;
+    top: 0;
+    background-color: var(--backgroundBlack);
+    padding: 1%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.menubar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menubar ul li:hover {
+    background-color: rgb(173, 173, 173);
+    color: black;
+}
+
+.menubar ul li {
+    padding: 1%;
+    list-style-type: none;
+    font-size: 100%;
+    color: var(--white);
+
+}
+
+
+/* ////////        man Container       /////// */
+.man-container {
+    background-color: var(--backgroundBlack);
+    text-align: center;
+}
+
+.man-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.manText {
+    /* max-width: 30%; */
+    text-align: start;
+}
+
+.manTeaxtDiv {
+    line-height: 20px;
+}
+
+.manTeaxtDiv h4,
+p {
+    color: rgb(102, 102, 102);
+}
+
+.manTeaxtDiv h4 {
+    font-weight: 100;
+    font-size: 25px;
+    margin: 0;
+}
+
+.manTeaxtDiv h1 {
+    color: rgb(248, 248, 248);
+    font-size: 44px;
+    font-weight: var(--headweight500);
+
+}
+
+.manTeaxtDiv p {
+    font-size: 90%;
+    line-height: 1.6;
+    margin-top: 7%;
+}
+
+/* /////////         leaddy circle  /////////// */
+.container2 {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 5%;
+    padding: 6% 0%;
+    margin: 0;
+    text-align: center;
+}
+
+.col1 {
+    /* border: 1px solid pink; */
+    width: 35%;
+    text-align: start;
+    margin: 0;
+
+}
+
+.col2 {
+    /* border:1px solid red; */
+    text-align: center;
+    align-items: center;
+    width: 30%
+}
+
+.leddyImage {
+    border-radius: 50%;
+    border: 20px solid #fff;
+    box-shadow: 1px 0px 5px 2px #7a787871;
+}
+
+.leddyImage img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.col1 p {
+    margin: 0 0 20px;
+    /* font-size: 12px; */
+    line-height: 1.5;
+}
+
+.col1 p span {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+
+/* ///////   Cardsection  ///////////// */
+.cardSection {
+    background-color: var(--backgroundBlack);
+    text-align: center;
+    padding: 4%;
+}
+
+.cardText {
+    color: var(--gray);
+    font-size: var(--titleSize25);
+    font-weight: var(--headweight500);
+    text-decoration-color: var(--gray);
+    display: inline-block;
+    position: relative;
+}
+
+.cardText:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    bottom: 1px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray);
+}
+
+.slider {
+    margin-top: 3%;
+    border-top: 1px solid var(--gray);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    column-gap: 5%;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(54, 54, 54, 0.233);
+    margin: 10px 0;
+}
+
+.card-content {
+    padding: 3% 0;
+}
+
+.card-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.card-content p {
+    margin: 10px 0 0;
+    color: var(--gray);
+    font-size: 13px;
+}
+
+
+/* his family */
+.hisFamily {
+    text-align: center;
+    padding: 3% 10%;
+}
+
+.famliyTitle {
+    font-size: var(--titleSize25);
+    font-weight: var(--headweight500);
+    color: var(--gray);
+    text-decoration-color: var(--gray);
+    display: inline-block;
+    position: relative;
+}
+
+.famliyTitle::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    bottom: 1px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--gray);
+}
+
+.hisCard {
+    text-align: center;
+    margin: 60px auto;
+
+}
+
+.section_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 1%;
+}
+
+.hiscardImage {
+    /* width: 13%; */
+    height: auto;
+}
+
+.section_1 img {
+    border-radius: 50%;
+}
+
+.section_1_div {
+    text-align: start;
+}
+
+.section_1 h2 {
+    font-size: var(--titleSize25);
+    font-weight: var(--headweight500);
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.section_1 p {
+    font-size: 1em;
+    margin: 0;
+    color: var(--gray);
+}
+
+/* ///////     his social    ////// */
+.socialMediaSection {
+    background-color: var(--backgroundBlack);
+    padding: 2% 5%;
+    margin: 0;
+    text-align: center;
+}
+
+.socialMediaHeading h4 {
+    color: var(--gray);
+    font-size: var(--titleSize25);
+    font-weight: var(--headweight500);
+    text-decoration-color: var(--gray);
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.socialMediaHeading h4:after {
+    content: '';
+    position: absolute;
+    left: -3px;
+    bottom: 1px;
+    width: 103%;
+    height: 2px;
+    background-color: var(--gray);
+}
+.socialMediaCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 15%;
+    row-gap: 30px;
+    padding: 4% 0;
+}
+
+.socialCard {
+    text-align: center;
+    align-items: center;
+    background-color: var(--white);
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardDescription {
+    margin: 0;
+}
+
+.cardSection1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.socialHr {
+    background-color: var(--backgroundBlack);
+    height: 1px;
+    margin: 0;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardHeading h3 {
+    font-size: 20px;
+    color: var(--backgroundBlack);
+}
+
+.cardSection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.cardDescription p {
+    font-size: var(--para);
+    color: var(--gray);
+    text-align: center;
+    margin: 0;
+}
+
+.cardButton {
+    width: 80%;
+}
+
+.btn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: var(--headweight500);
+    background-color: var(--backgroundBlack);
+    color: var(--white);
+    padding: 10px 30px;
+    margin-top: 35px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #565555;
+}
+
+/* ////////     donation ///////////////// */
+.donation {
+    background-image: url("./images1/note.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    /* padding: 3% 20%; */
+
+    padding: 3% 23%;
+}
+
+.width500 {
+    padding: 3% 0;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.donationCard {
+    text-align: center;
+    color: white;
+}
+
+.donationCard h1 {
+    font-size: 55px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.donationCard p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.548);
+    padding: 10% 7%;
+}
+
+.donationCard button {
+    padding: 3% 15%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.donationCard button:hover {
+    background-color: #363535;
+}
+
+
+/* ////about us */
+.about {
+    padding: 5% 15% 2%;
+}
+
+.about h1 {
+    font-size: var(--titleSize25);
+    font-weight: var(--headweight500);
+    color: var(--backgroundBlack);
+}
+
+.about p {
+    color: var(--gray);
+    line-height: 1.4;
+    font-size: var(--para);
+}
+
+/* /Footer */
+.footer {
+    padding: 0 9%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerContactSection {
+    width: 40%;
+    padding: 4% 0;
+}
+
+.footerLinkSection {
+    width: 30%;
+    padding: 4% 0;
+}
+
+.footerContactSection h2,
+.footerLink h2,
+.footerAddress h2 {
+    color: var(--white);
+    font-size: var(--titleSize25);
+    font-weight: var(--headweight500);
+    margin-top: 0;
+}
+
+.footerLink {
+    margin-bottom: 50px;
+}
+
+.footerContactSection .contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContactSection .contactForm label {
+    font-size: var(--footer);
+    color: var(--gray);
+    padding: 1% 0;
+}
+
+.footerContactSection .contactForm input[type="text"],
+input[type="email"] {
+    padding: 2%;
+    font-size: 11px;
+
+}
+
+.footerContactSection .contactForm input[type="button"] {
+    width: 200px;
+    padding: 2%;
+    font-size: var(--footer);
+    color: var(--backgroundBlack);
+    border-radius: 1px;
+    border:none;
+    font-weight: 600;
+}
+
+.footerContactSection .contactForm textarea {
+    resize: vertical;
+    min-height: 200px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.footerLink ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footerLink ul li {
+    text-align: start;
+    line-height: 1.5;
+    font-size: var(--footer);
+}
+
+.footerLink ul li a,
+.footerAddress {
+    color: var(--gray);
+    font-size: var(--footer);
+}
+
+.footerAddress address {
+    margin-top: 30px;
+}
+
+/* ////////        man section1 */
+@media (max-width: 425px) {
+    .man-column {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .manImage {
+        width: 60%;
+    }
+
+    .manText {
+        max-width: 90%;
+    }
+}
+
+@media (max-width:520px) {
+
+    .manTeaxtDiv h1 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .man-column {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .manImage {
+        max-width: 60%;
+    }
+
+    .manText {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .man-container {
+        padding: 0 5%;
+    }
+
+    .man-column {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .manText {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .man-column {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .manText {
+        max-width: 35%;
+    }
+}
+
+/* //////////////       section2 circle leddy           ////////// */
+@media (max-width: 425px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .col1 {
+        width: 100%;
+    }
+
+    .col2 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .col1 p {
+        font-size: 10px;
+    }
+
+    .col1 p span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .col1 {
+        width: 90%;
+    }
+
+    .col2 {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .col1 p {
+        font-size: 11px;
+    }
+
+    .col1 p span {
+        font-size: 17px;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container2 {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .col1 {
+        width: 55%;
+    }
+
+    .col2 {
+        width: 35%;
+    }
+
+    .col1 p {
+        font-size: 12px;
+    }
+
+    .col1 p span {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container2 {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .col1 {
+        width: 55%;
+    }
+
+    .col2 {
+        width: 35%;
+    }
+
+    .col1 p {
+        font-size: 12px;
+    }
+
+    .col1 p span {
+        font-size: 18px;
+    }
+}
+
+/* ////////          Famous Works   //////////// */
+@media (max-width: 600px) {
+    .cardSection {
+        padding: 5% 0 0;
+    }
+
+    .slider {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: 5% 10%;
+        gap: 0;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 601px) and (max-width:1024px) {
+    .cardSection {
+        padding: 5% 0 0;
+    }
+
+    .slider {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6%;
+        padding: 5%;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1430px) {
+    .slider {
+        column-gap: 2%;
+        padding: 3%;
+    }
+}
+
+/* ///////////           family /////////// */
+@media (max-width: 600px) {
+    .section_1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 8% 0;
+        margin: 0;
+        row-gap: 25px;
+    }
+
+    .hiscardImage {
+        width: 70%;
+        height: auto;
+    }
+
+    .section_1 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .section_1_div h2 {
+        font-size: 1em;
+    }
+
+    .section_1_div p {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 770px) {
+    .hisFamily {
+        text-align: center;
+        padding: 2%;
+    }
+
+    .hisCard {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .section_1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        gap: 30px;
+    }
+
+    .hiscardImage {
+        padding: 2%;
+        width: 50%;
+        height: auto;
+    }
+
+    .section_1_div h2 {
+        font-size: 1.1em;
+    }
+
+    .section_1_div p {
+        font-size: 1em;
+    }
+}
+
+/* //////    Social Media   ///////////// */
+@media (max-width: 470px) {
+    .socialMediaSection {
+        padding: 5%;
+    }
+
+    .socialMediaCards {
+        padding: 10% 0;
+    }
+}
+
+@media (max-width: 471px) and (min-width:768px) {
+    .socialMediaCards {
+        padding: 15% 0;
+    }
+}
+
+@media (max-width: 399px) {
+    .donation {
+        display: flex;
+        justify-content: center;
+        padding: 5% 0;
+    }
+
+    .width500 {
+        justify-content: start;
+        text-align: center;
+        width: 240px !important;
+        height: 400px;
+        padding: 3% 2%;
+    }
+
+    .donationCard h1 {
+        font-size: 39px;
+    }
+
+    .donationCard p {
+        font-size: 13px;
+        margin-bottom: 0px;
+        padding: 6% 7%;
+    }
+    .donationCard button {
+        padding: 3% 12%;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 400px) and (max-width:680px) {
+    .donation {
+        display: flex;
+        justify-content: center;
+        padding: 5% 0;
+    }
+
+    .width500 {
+        justify-content: start;
+        width: 290px !important;
+        height: 440px;
+    }
+
+    .donationCard h1 {
+        font-size: 45px;
+    }
+
+    .donationCard p {
+        font-size: 15px;
+        margin-bottom: 0px;
+        padding: 9% 7%;
+    }
+}
+
+@media (max-width: 690px) {
+    .width500 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ///////    about //////////// */
+@media (max-width:768px) {
+    .about {
+        padding: 2% 5%;
+    }
+}
+
+/* //////      footer  ////////////////////*/
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+    }
+    .footerContactSection .contactForm input[type="button"] {
+        width: 140px;
+    }
+    .footerContactSection,
+    .footerLinkSection {
+        width: 90%;
+    }
+
+}
